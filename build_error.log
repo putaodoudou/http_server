@@ -1,0 +1,229 @@
+
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'do_get':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:199:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  strcat(header,"Access-Control-Allow-Origin: * \r\n");
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:200:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  strcat(header,"Access-Control-Allow-headers: x-requested-with,content-type \r\n");
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:201:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  strcat(header,"Connection: close\r\n"); 
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:202:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:206:10: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+   //{"errcode":0,"errmsg":"ssid1,ssid2,ssid3,ssid4"}
+          ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:209:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   *body_len = strlen(body);
+           ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/ports/icomm/include/arch/cc.h:41:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/arch.h:43,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/debug.h:35,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/opt.h:46,
+                 from components/net/tcpip/lwip-1.4.0/src/include/lwip/sockets.h:37,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:4,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/stdio.h:236:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:210:22: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   p_body = body;
+                      ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:33:8: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  _EXFUN(strlen,(const char *));
+        ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:215:10: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  strcat(header,header_tmp);
+          ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/ports/icomm/include/arch/cc.h:41:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/arch.h:43,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/debug.h:35,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/net/tcpip/lwip-1.4.0/src/include/lwip/opt.h:46,
+                 from components/net/tcpip/lwip-1.4.0/src/include/lwip/sockets.h:37,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:4,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/stdio.h:236:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:215:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  strcat(header,header_tmp);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:216:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  strcat(header,"\r\n");
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:216:16: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+  strcat(header,"\r\n");
+                ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:217:9: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness [-Wpointer-sign]
+  if(send_flag)
+         ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:26:7: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+       ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:220:40: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   socket_response(sockfd,p_body,*body_len);
+                                        ^
+In file included from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/components/inc/ssv_lib.h:4:0,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/http_parser.h:24,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.h:5,
+                 from /cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:1:
+/cygdrive/c/Andestech/BSPv420/toolchains/nds32le-elf-mculib-v3/nds32le-elf/include/string.h:33:8: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  _EXFUN(strlen,(const char *));
+        ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:220:26: warning: pointer targets in passing argument 2 of 'socket_response' differ in signedness [-Wpointer-sign]
+   socket_response(sockfd,p_body,*body_len);
+                          ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:89:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ void socket_response(int socket,const char* buf,int buf_len)
+      ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:221:26: warning: pointer targets in passing argument 2 of 'socket_response' differ in signedness [-Wpointer-sign]
+  }
+                          ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:89:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ void socket_response(int socket,const char* buf,int buf_len)
+      ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:213:1: warning: label 'get_exit' defined but not used [-Wunused-label]
+  memset(header_tmp,0,sizeof(header_tmp));
+ ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'do_post':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:246:16: warning: passing argument 1 of 'get_param' discards 'const' qualifier from pointer target type
+   {
+                ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:63:5: note: expected 'char *' but argument is of type 'const char *'
+ int get_param(char *arg,char *ssid,char* pwd)
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:283:10: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   *body_len = strlen(body);
+          ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:289:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' [-Wformat=]
+  strcat(header,header_tmp);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:295:26: warning: pointer targets in passing argument 2 of 'socket_response' differ in signedness [-Wpointer-sign]
+  }
+                          ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:89:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ void socket_response(int socket,const char* buf,int buf_len)
+      ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'httpUrlCb':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:361:2: warning: format '%d' expects argument of type 'int', but argument 4 has type 'size_t' [-Wformat=]
+  display_data(buf,length);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'httpStatusCb':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:380:2: warning: format '%d' expects argument of type 'int', but argument 4 has type 'u32' [-Wformat=]
+  display_data(buf,length);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'httpHeaderFieldCb':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:387:2: warning: format '%d' expects argument of type 'int', but argument 4 has type 'u32' [-Wformat=]
+  display_data(buf,length);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'httpHeaderValueCb':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:406:2: warning: format '%d' expects argument of type 'int', but argument 4 has type 'u32' [-Wformat=]
+  display_data(buf,length);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'httpBodyCb':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:426:2: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'u32' [-Wformat=]
+  display_data(buf,length);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'process':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:470:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'TaskHandle_t' [-Wformat=]
+     {
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:505:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'char *' [-Wformat=]
+ 
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:591:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'TaskHandle_t' [-Wformat=]
+  printf("process_url del: %x\n",p_request_url[j_url_bak]);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:593:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'char *' [-Wformat=]
+     close(sockfd);
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:609:5: warning: 'return' with a value, in function returning void
+ 
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'http_start_task':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:683:2: warning: implicit declaration of function 'http_task_pre' [-Wimplicit-function-declaration]
+ }
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:684:5: warning: 'return' with a value, in function returning void
+ 
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: At top level:
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:689:6: warning: conflicting types for 'http_task_pre'
+  int ii=0;
+      ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:683:2: note: previous implicit declaration of 'http_task_pre' was here
+ }
+  ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'http_task_pre':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:700:5: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'TaskHandle_t' [-Wformat=]
+     p_process_handle[ii] = NULL;
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:729:5: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'char *' [-Wformat=]
+     p_request_url[ii] = NULL;
+     ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:740:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'TaskHandle_t' [-Wformat=]
+   http_start_task_handle = NULL;
+   ^
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c: In function 'creat_http_task':
+/cygdrive/e/GIT415/SSV.tiramisu.6x66.18Q2.1910.01.01R/projects/http_server/src/cli/user_httpserver.c:771:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'TaskHandle_t' [-Wformat=]
+  else
+   ^

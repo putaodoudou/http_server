@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>南方硅谷微电子有限公司</title>
+<style type="text/css">
+
+.ul1{margin:0;padding:0; list-style:none;}
+.li1{margin:0;padding:0; list-style:none;}
+.menu{width:960px;height:31px;margin:0 auto; background:url(image/tab.jpg) repeat-x; }
+.menu ul{width:960px;float:left;height:31px;display:inline;}
+.menu ul li{width:160px;height:31px; line-height:31px; text-align:center; float:left;display:inline; }
+.menu ul li a{width:160px;height:31px; float:left;text-decoration:none; color:#fff; font-size:14px;font-weight:bold;}
+
+.logo{}
+.bodystyle{  margin:0 auto; width:1000px; background:#d5d5d7;}
+ 
+.STYLE1 {color: #FFFFFF}
+</style>
+<script>
+function onloadBody()
+{
+	 onloadWifiForm();
+}
+function onloadWifiForm()
+{
+	var v_ssid = document.getElementById("p_ssid").innerHTML;
+	var v_aplist = document.getElementById("p_aplist").innerHTML;
+	var v_aplistpage = document.getElementById("p_aplistpage").innerHTML;
+	var v_totalpage = document.getElementById("p_totalpage").innerHTML;
+	
+	document.getElementById("p_ssid").style.display="none";
+	document.getElementById("p_aplist").style.display="none";
+	document.getElementById("p_aplistpage").style.display="none";
+	document.getElementById("p_totalpage").style.display="none";
+	
+	v_ssid = v_ssid.substring(v_ssid.lastIndexOf(">")+1, v_ssid.length);
+	v_aplist = v_aplist.substring(v_aplist.lastIndexOf(">")+1, v_aplist.length);
+	v_aplistpage = v_aplistpage.substring(v_aplistpage.lastIndexOf(">")+1, v_aplistpage.length);
+	v_totalpage = v_totalpage.substring(v_totalpage.lastIndexOf(">")+1, v_totalpage.length);
+	
+	v_ssid = v_ssid.replace(/&amp;/g,"&");
+	document.getElementById("t_key").disabled = false;
+
+	with(wifi_form)
+	{
+	  t_ssid.value = v_ssid;
+	  document.getElementById("scanbtn").disabled = false;
+	  t_key.value = "";
+	}
+	
+	document.getElementById("t_page").value=v_aplistpage;
+    document.getElementById("t_totalpage").value=v_totalpage;
+	var aplist_tmp = v_aplist;
+
+	while (aplist_tmp.length > 0)
+    {
+   	var bssid;
+   	var ssid;
+   	var proto;
+   	var channel;
+   	var i = 0;
+   
+	  bssid = aplist_tmp.substring(aplist_tmp.indexOf("#") + 1, aplist_tmp.indexOf(";"));
+	  aplist_tmp = aplist_tmp.substring(aplist_tmp.indexOf(";") + 1, aplist_tmp.length);
+	  ssid = aplist_tmp.substring(aplist_tmp.indexOf("#") + 1, aplist_tmp.indexOf(";"));
+	  aplist_tmp = aplist_tmp.substring(aplist_tmp.indexOf(";") + 1, aplist_tmp.length);
+	  proto = aplist_tmp.substring(aplist_tmp.indexOf("#") + 1, aplist_tmp.indexOf(";"));
+	  aplist_tmp = aplist_tmp.substring(aplist_tmp.indexOf(";") + 1, aplist_tmp.length);
+	  channel = aplist_tmp.substring(aplist_tmp.indexOf("#") + 1, aplist_tmp.indexOf(";"));
+	  aplist_tmp = aplist_tmp.substring(aplist_tmp.indexOf(";") + 1, aplist_tmp.length);
+	  aplist_tmp = aplist_tmp.substring(aplist_tmp.indexOf("\r\n") + 2, aplist_tmp.length);
+	  addLine(bssid, ssid, proto, channel); 
+   }
+   scanbtn.style.display="block"; 
+
+}
+function addLine(bssid, ssid, proto, channel){
+    var newLine = aplist_table.rows.length;
+    var row = aplist_table.insertRow(newLine);        
+    var col = row.insertCell(0);    
+    col.innerHTML = newLine;
+    col = row.insertCell(1);
+    col.innerHTML = bssid;
+    col = row.insertCell(2);
+    col.innerHTML = ssid;
+    col = row.insertCell(3);
+    col.innerHTML = proto;
+    col = row.insertCell(4);
+    col.innerHTML = channel;
+    col = row.insertCell(5);
+    return newLine;
+}
+
+function checkform()
+{
+	var ssid = document.getElementById("t_ssid").value;
+	var key = document.getElementById("t_key").value;
+	
+	if (ssid.length > 32)
+	{
+		alert("ssid长度必须小于或等于32");
+		return false;	
+    }
+	if ((key.length < 8) || (key.length > 64))
+	{
+		alert("key长度必须为8-64之间");
+		return false;
+	}	
+	return true;
+}
+
+</script> 
+</head>
+<body class="bodystyle" onLoad="onloadBody();">
+<div style="background-color:#FFFFFF; ">
+<div class="logo" align="left" >
+ <img src="image/logo_2.jpg" alt="南方硅谷微电子有限公司" title="南方硅谷微电子有限公司" style="margin:20px 0px 0px 0px;" />
+ 
+</div>
+ 
+<div class="menu">
+  <ul class="ul1">
+
+        <li class="li1"><a href="wireless_config.shtml">无线设置</a></li>
+
+  </ul>
+</div>
+ 
+<div style="background-color:#0066CC;color:#fff;margin-top:10px;">
+               <HR SIZE=1>
+
+</div>
+
+
+<div align="left" style="margin-left:20px; margin-top:30px;">
+<table width="67%">
+<tr>
+<td width="48%" valign="top">
+<form method="get" id="aplist_form" action="/aplist.cgi">	
+<table id="aplist_table" align="center" width="100%" border="1" cellpadding="1" cellspacing="0">
+	<caption>
+	<strong>Ap list</strong>
+	</caption>
+	<tr>
+		<th>NO</th>
+		<th>BSSID</th>
+  		<th>SSID</th>
+  		<th>Proto</th>
+  		<th>Channel</th>
+	</tr> 
+</table>
+<input type="text" id="t_page" name="page" value="1" align="middle" width="20"/> /
+<input type="text" id="t_totalpage" value="1" align="middle" width="20"/> page	
+<input type="submit" id="aplistbtn" value="go" align="middle"/>	
+<br>
+</form>
+<br>
+<form method="get" id="scanfrm" action="/scan.cgi">
+<input type="submit" id="scanbtn" value="home page" align="right"/>	
+</form></td>
+<td width="51%" valign="top">
+<form method="post" id="wifi_form" action="/wifimode.cgi" onSubmit="return checkform()">	
+	<table width="329" border="0">
+		<tr><td colspan="2"></tr>	
+
+		<tr> 
+			<td align="right">SSID:</td>
+  			<td align="left"><input name="ssid" type=text id="t_ssid" size=16 maxlength="128"></td>
+  		</tr>  
+
+  		<tr> 
+			<td align="right">PASSWORD:</td>
+  			<td align="left"><input name="key" type=password id="t_key" size=16 maxlength="128"></td>
+ 		 </tr> 
+
+		 <tr>
+            <td align="right">&nbsp;</td>
+            <td align="left"><input type="submit" id="commit" value="commit"/></td>
+		</tr>
+	</table>
+</form></td>
+<td width="1%"></td>	
+</tr>
+</table>
+
+<p class="STYLE1" id="p_ssid" hidden="hidden"><!--#ssid--></p>
+<p class="STYLE1" id="p_aplistpage" hidden="hidden"><!--#aplistpage--></p>
+<p class="STYLE1" id="p_totalpage" hidden="hidden"><!--#aplistcount--></p>
+<p class="STYLE1" id="p_aplist" hidden="hidden"><!--#aplist--></p>
+
+</div>
+
+<div align="center" style="margin-top:20px;margin-bottom:30px; font-size:12px">
+<table>
+   <tr>
+         <td align="center"><a href="http://www.southsv.com.cn/cn/" target="_blank">南方硅谷微电子有限公司</a></td>           </tr>     <BR>  
+ </table>
+</div>
+</body>
+</html>
